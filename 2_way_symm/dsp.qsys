@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags="INTERNAL_COMPONENT=true"
+   categories="" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element a10_native_fixed_point_dsp_0
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="10AX115N2F45I1SG" />
+ <parameter name="deviceFamily" value="Arria 10" />
+ <parameter name="deviceSpeedGrade" value="1" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="true" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface
+   name="aclr"
+   internal="a10_native_fixed_point_dsp_0.aclr"
+   type="conduit"
+   dir="end">
+  <port name="aclr" internal="aclr" />
+ </interface>
+ <interface
+   name="ax"
+   internal="a10_native_fixed_point_dsp_0.ax"
+   type="conduit"
+   dir="end">
+  <port name="ax" internal="ax" />
+ </interface>
+ <interface
+   name="ay"
+   internal="a10_native_fixed_point_dsp_0.ay"
+   type="conduit"
+   dir="end">
+  <port name="ay" internal="ay" />
+ </interface>
+ <interface
+   name="bx"
+   internal="a10_native_fixed_point_dsp_0.bx"
+   type="conduit"
+   dir="end">
+  <port name="bx" internal="bx" />
+ </interface>
+ <interface
+   name="by"
+   internal="a10_native_fixed_point_dsp_0.by"
+   type="conduit"
+   dir="end">
+  <port name="by" internal="by" />
+ </interface>
+ <interface
+   name="clk"
+   internal="a10_native_fixed_point_dsp_0.clk"
+   type="conduit"
+   dir="end">
+  <port name="clk" internal="clk" />
+ </interface>
+ <interface
+   name="ena"
+   internal="a10_native_fixed_point_dsp_0.ena"
+   type="conduit"
+   dir="end">
+  <port name="ena" internal="ena" />
+ </interface>
+ <interface
+   name="resulta"
+   internal="a10_native_fixed_point_dsp_0.resulta"
+   type="conduit"
+   dir="end">
+  <port name="resulta" internal="resulta" />
+ </interface>
+ <interface
+   name="resultb"
+   internal="a10_native_fixed_point_dsp_0.resultb"
+   type="conduit"
+   dir="end">
+  <port name="resultb" internal="resultb" />
+ </interface>
+ <module
+   name="a10_native_fixed_point_dsp_0"
+   kind="altera_a10_native_fixed_point_dsp"
+   version="20.1"
+   enabled="1"
+   autoexport="1">
+  <parameter name="accum_pipeline_clock" value="none" />
+  <parameter name="accumulate_clock" value="none" />
+  <parameter name="ax_clock" value="none" />
+  <parameter name="ax_width" value="18" />
+  <parameter name="ay_scan_in_clock" value="none" />
+  <parameter name="ay_scan_in_width" value="18" />
+  <parameter name="ay_use_scan_in" value="false" />
+  <parameter name="az_clock" value="none" />
+  <parameter name="az_width" value="0" />
+  <parameter name="bx_clock" value="none" />
+  <parameter name="bx_width" value="18" />
+  <parameter name="by_clock" value="none" />
+  <parameter name="by_use_scan_in" value="false" />
+  <parameter name="by_width" value="18" />
+  <parameter name="bz_clock" value="none" />
+  <parameter name="bz_width" value="0" />
+  <parameter name="coef_a_0" value="0" />
+  <parameter name="coef_a_1" value="0" />
+  <parameter name="coef_a_2" value="0" />
+  <parameter name="coef_a_3" value="0" />
+  <parameter name="coef_a_4" value="0" />
+  <parameter name="coef_a_5" value="0" />
+  <parameter name="coef_a_6" value="0" />
+  <parameter name="coef_a_7" value="0" />
+  <parameter name="coef_b_0" value="0" />
+  <parameter name="coef_b_1" value="0" />
+  <parameter name="coef_b_2" value="0" />
+  <parameter name="coef_b_3" value="0" />
+  <parameter name="coef_b_4" value="0" />
+  <parameter name="coef_b_5" value="0" />
+  <parameter name="coef_b_6" value="0" />
+  <parameter name="coef_b_7" value="0" />
+  <parameter name="coef_sel_a_clock" value="none" />
+  <parameter name="coef_sel_b_clock" value="none" />
+  <parameter name="delay_scan_out_ay" value="false" />
+  <parameter name="delay_scan_out_by" value="false" />
+  <parameter name="enable_accumulate" value="false" />
+  <parameter name="enable_double_accum" value="false" />
+  <parameter name="enable_loadconst" value="false" />
+  <parameter name="enable_negate" value="false" />
+  <parameter name="enable_sub" value="false" />
+  <parameter name="gui_chainout_enable" value="false" />
+  <parameter name="gui_scanout_enable" value="false" />
+  <parameter name="input_pipeline_clock" value="0" />
+  <parameter name="load_const_clock" value="none" />
+  <parameter name="load_const_pipeline_clock" value="none" />
+  <parameter name="load_const_value" value="0" />
+  <parameter name="mode_sub_location" value="0" />
+  <parameter name="negate_clock" value="none" />
+  <parameter name="negate_pipeline_clock" value="none" />
+  <parameter name="operand_source_max" value="input" />
+  <parameter name="operand_source_may" value="input" />
+  <parameter name="operand_source_mbx" value="input" />
+  <parameter name="operand_source_mby" value="input" />
+  <parameter name="operation_mode" value="m18x18_full" />
+  <parameter name="output_clock" value="0" />
+  <parameter name="preadder_subtract_a" value="false" />
+  <parameter name="preadder_subtract_b" value="false" />
+  <parameter name="result_a_width" value="37" />
+  <parameter name="result_b_width" value="37" />
+  <parameter name="scan_out_width" value="18" />
+  <parameter name="signed_max" value="false" />
+  <parameter name="signed_may" value="true" />
+  <parameter name="signed_mbx" value="false" />
+  <parameter name="signed_mby" value="true" />
+  <parameter name="sub_clock" value="none" />
+  <parameter name="sub_pipeline_clock" value="none" />
+  <parameter name="use_chainadder" value="false" />
+ </module>
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

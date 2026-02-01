@@ -1,0 +1,164 @@
+module coef_conv (
+	input  clk,			// Operating clock
+	input  reset,			// Active-high reset signal (reset when set to 1)
+	//input  [71:0] i_f,		// Nine 8-bit signed convolution filter coefficients in row-major format (i.e. i_f[7:0] is f[0][0], i_f[15:8] is f[0][1], etc.)
+	input  i_valid,			// Set to 1 if input pixel is valid
+	input  i_ready,			// Set to 1 if consumer block is ready to receive a new pixel
+	input  [7:0] i_x,		// Input pixel value (8-bit unsigned value between 0 and 255)
+	output o_valid,			// Set to 1 if output pixel is valid
+	output o_ready,			// Set to 1 if this block is ready to receive a new pixel
+	output [7:0] o_y		// Output pixel value (8-bit unsigned value between 0 and 255)
+);
+
+localparam FILTER_SIZE = 3;	// Convolution filter dimension (i.e. 3x3)
+localparam PIXEL_DATAW = 8;	// Bit width of image pixels and filter coefficients (i.e. 8 bits)
+localparam int IMG_W = 512;
+localparam int ADDRW = 9; //log(512)
+
+logic stall;
+	assign stall  = o_valid && !i_ready;
+	assign o_ready = !stall;
+
+	logic accept;
+	assign accept = i_valid && o_ready;
+  
+	logic [$clog2(IMG_W)-1:0] col;
+	logic [15:0] row;
+	
+  logic [7:0] pix_r1, pix_r2;  // row-1 and row-2 pixels at current column
+
+  line_delay_fifo #(.DEPTH(IMG_W), .W(8)) u_line1 (
+    .clk   (clk),
+    .reset (reset),
+    .en    (accept && !stall),
+    .din   (i_x),
+    .dout  (pix_r1)
+  );
+
+  line_delay_fifo #(.DEPTH(IMG_W), .W(8)) u_line2 (
+    .clk   (clk),
+    .reset (reset),
+    .en    (accept && !stall),
+    .din   (pix_r1),
+    .dout  (pix_r2)
+  );
+  
+  logic [7:0] sh_cur [0:2];
+  logic [7:0] sh_r1  [0:2];
+  logic [7:0] sh_r2  [0:2];
+  
+  
+  logic win_valid;
+
+  always_ff @(posedge clk) begin
+    if (reset) begin
+      col <= '0;
+      row <= '0;
+
+      sh_cur[0] <= 0; sh_cur[1] <= 0; sh_cur[2] <= 0;
+      sh_r1 [0] <= 0; sh_r1 [1] <= 0; sh_r1 [2] <= 0;
+      sh_r2 [0] <= 0; sh_r2 [1] <= 0; sh_r2 [2] <= 0;
+
+      win_valid <= 1'b0;
+      o_valid   <= 1'b0;
+    end else if (!stall) begin
+      if (accept) begin
+        // shift columns
+        sh_cur[0] <= sh_cur[1];
+        sh_cur[1] <= sh_cur[2];
+        sh_cur[2] <= i_x;
+
+        sh_r1[0]  <= sh_r1[1];
+        sh_r1[1]  <= sh_r1[2];
+        sh_r1[2]  <= pix_r1;
+
+        sh_r2[0]  <= sh_r2[1];
+        sh_r2[1]  <= sh_r2[2];
+        sh_r2[2]  <= pix_r2;
+
+        // update counters
+        if (col == IMG_W-1) begin
+          col <= '0;
+          row <= row + 1;
+        end else begin
+          col <= col + 1;
+        end
+
+        // valid output corresponds to center at (row-1, col-1),
+        // so we need row>=2 and col>=2 at the time we accept this sample.
+        win_valid <= (row >= 2) && (col >= 2);
+        o_valid   <= (row >= 2) && (col >= 2);
+      end else begin
+        o_valid <= 1'b0;
+      end
+    end
+  end
+  
+  logic signed [15:0] acc;
+  logic signed [11:0] S4;
+  logic signed [9:0]  center;
+  logic signed [11:0] five_center;
+
+  always_comb begin
+    // promote to signed
+    center = $signed({1'b0, sh_r1[1]});   // p11
+
+    // S4 = p01 + p10 + p12 + p21
+    S4 = $signed({1'b0, sh_r2[1]}) +      // p01
+         $signed({1'b0, sh_r1[0]}) +      // p10
+         $signed({1'b0, sh_r1[2]}) +      // p12
+         $signed({1'b0, sh_cur[1]});      // p21
+
+    // 5*center = (center<<2) + center
+    five_center = ($signed(center) <<< 2) + $signed(center);
+
+    acc = $signed(five_center) - $signed(S4);
+  end
+
+  // ----------------------------
+  // Saturate to 0..255
+  // ----------------------------
+  always_ff @(posedge clk) begin
+    if (reset) begin
+      o_y <= 8'd0;
+    end else if (!stall) begin
+      if (accept && win_valid) begin
+        if (acc < 0)        o_y <= 8'd0;
+        else if (acc > 255) o_y <= 8'd255;
+        else                o_y <= acc[7:0];
+      end
+    end
+  end
+endmodule
+
+module line_delay_fifo #(
+  parameter int DEPTH = 512,
+  parameter int W = 8
+)(
+  input  logic         clk,
+  input  logic         reset,
+  input  logic         en,
+  input  logic [W-1:0] din,
+  output logic [W-1:0] dout
+);
+
+  localparam int ADDR_W = $clog2(DEPTH);
+
+  (* ramstyle = "M20K" *) logic [W-1:0] mem [0:DEPTH-1];
+  logic [ADDR_W-1:0] addr;
+
+  always_ff @(posedge clk) begin
+    if (reset) begin
+      addr <= '0;
+      dout <= '0;
+    end else if (en) begin
+      // "read-before-write" style delay tap
+      dout      <= mem[addr];
+      mem[addr] <= din;
+
+      if (addr == DEPTH-1) addr <= '0;
+      else                 addr <= addr + 1'b1;
+    end
+  end
+
+endmodule

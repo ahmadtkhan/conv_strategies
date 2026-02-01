@@ -1,0 +1,11 @@
+	component altshift is
+		port (
+			aclr     : in  std_logic                     := 'X';             -- aclr
+			clken    : in  std_logic                     := 'X';             -- clken
+			clock    : in  std_logic                     := 'X';             -- clock
+			shiftin  : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- shiftin
+			shiftout : out std_logic_vector(7 downto 0);                     -- shiftout
+			taps     : out std_logic_vector(15 downto 0)                     -- taps
+		);
+	end component altshift;
+

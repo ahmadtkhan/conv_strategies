@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2026.01.23.00:47:14"
+ outputDirectory="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Arria 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10AX115N2F45I1SG"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="altshift_taps_input" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="aclr" direction="input" role="aclr" width="1" />
+   <port name="clken" direction="input" role="clken" width="1" />
+   <port name="clock" direction="input" role="clock" width="1" />
+   <port name="shiftin" direction="input" role="shiftin" width="8" />
+  </interface>
+  <interface name="altshift_taps_output" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="shiftout" direction="output" role="shiftout" width="8" />
+   <port name="taps" direction="output" role="taps" width="16" />
+  </interface>
+ </perimeter>
+ <entity kind="altshift" version="1.0" name="altshift">
+  <parameter name="AUTO_GENERATION_ID" value="1769147234" />
+  <parameter name="AUTO_DEVICE" value="10AX115N2F45I1SG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
+  <generatedFiles>
+   <file
+       path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/synth/altshift.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/synth/altshift_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/synth/altshift.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/synth/altshift_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/cad1/Altera/20.1/ip/altera/megafunctions/altshift_taps/altshift_taps_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="altshift">"Generating: altshift"</message>
+   <message level="Info" culprit="altshift">"Generating: altshift_altshift_taps_201_as43lbi"</message>
+   <message level="Info" culprit="altshift_taps_0">Generating top-level entity altshift_altshift_taps_201_as43lbi.</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altshift_taps"
+   version="20.1"
+   name="altshift_altshift_taps_201_as43lbi">
+  <parameter name="GUI_NUMBER_OF_TAPS" value="2" />
+  <parameter name="GUI_TBENCH" value="false" />
+  <parameter name="DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="GUI_RAM_BLOCK_TYPE" value="M20K" />
+  <parameter name="GUI_WIDTH" value="8" />
+  <parameter name="GUI_GROUP_TAPS" value="false" />
+  <parameter name="GUI_USE_CLKEN" value="true" />
+  <parameter name="GUI_TAP_DISTANCE" value="514" />
+  <parameter name="GUI_USE_ACLR" value="true" />
+  <generatedFiles>
+   <file
+       path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift_taps_201/synth/altshift_altshift_taps_201_as43lbi.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift_taps_201/synth/altshift_altshift_taps_201_as43lbi.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/cad1/Altera/20.1/ip/altera/megafunctions/altshift_taps/altshift_taps_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="altshift" as="altshift_taps_0" />
+  <messages>
+   <message level="Info" culprit="altshift">"Generating: altshift_altshift_taps_201_as43lbi"</message>
+   <message level="Info" culprit="altshift_taps_0">Generating top-level entity altshift_altshift_taps_201_as43lbi.</message>
+  </messages>
+ </entity>
+</deploy>

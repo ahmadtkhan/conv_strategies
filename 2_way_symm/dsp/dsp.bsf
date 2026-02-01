@@ -1,0 +1,137 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 208 344)
+	(text "dsp" (rect 94 -1 108 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 328 20 340)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "aclr[1..0]" (rect 0 0 33 12)(font "Arial" (font_size 8)))
+		(text "aclr[1..0]" (rect 4 61 64 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 64 72)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "ax[17..0]" (rect 0 0 33 12)(font "Arial" (font_size 8)))
+		(text "ax[17..0]" (rect 4 101 58 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 64 112)(line_width 3))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "ay[17..0]" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "ay[17..0]" (rect 4 141 58 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 64 152)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "bx[17..0]" (rect 0 0 33 12)(font "Arial" (font_size 8)))
+		(text "bx[17..0]" (rect 4 181 58 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 64 192)(line_width 3))
+	)
+	(port
+		(pt 0 232)
+		(input)
+		(text "by[17..0]" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "by[17..0]" (rect 4 221 58 232)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 64 232)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "clk[2..0]" (rect 0 0 30 12)(font "Arial" (font_size 8)))
+		(text "clk[2..0]" (rect 4 261 58 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 64 272)(line_width 3))
+	)
+	(port
+		(pt 0 312)
+		(input)
+		(text "ena[2..0]" (rect 0 0 34 12)(font "Arial" (font_size 8)))
+		(text "ena[2..0]" (rect 4 301 58 312)(font "Arial" (font_size 8)))
+		(line (pt 0 312)(pt 64 312)(line_width 3))
+	)
+	(port
+		(pt 208 72)
+		(output)
+		(text "resulta[36..0]" (rect 0 0 50 12)(font "Arial" (font_size 8)))
+		(text "resulta[36..0]" (rect 143 61 227 72)(font "Arial" (font_size 8)))
+		(line (pt 208 72)(pt 128 72)(line_width 3))
+	)
+	(port
+		(pt 208 112)
+		(output)
+		(text "resultb[36..0]" (rect 0 0 50 12)(font "Arial" (font_size 8)))
+		(text "resultb[36..0]" (rect 143 101 227 112)(font "Arial" (font_size 8)))
+		(line (pt 208 112)(pt 128 112)(line_width 3))
+	)
+	(drawing
+		(text "aclr" (rect 44 43 112 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "aclr" (rect 69 67 162 144)(font "Arial" (color 0 0 0)))
+		(text "ax" (rect 52 83 116 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "ax" (rect 69 107 150 224)(font "Arial" (color 0 0 0)))
+		(text "ay" (rect 52 123 116 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "ay" (rect 69 147 150 304)(font "Arial" (color 0 0 0)))
+		(text "bx" (rect 52 163 116 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "bx" (rect 69 187 150 384)(font "Arial" (color 0 0 0)))
+		(text "by" (rect 52 203 116 419)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "by" (rect 69 227 150 464)(font "Arial" (color 0 0 0)))
+		(text "clk" (rect 49 243 116 499)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 69 267 156 544)(font "Arial" (color 0 0 0)))
+		(text "ena" (rect 44 283 106 579)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "ena" (rect 69 307 156 624)(font "Arial" (color 0 0 0)))
+		(text "resulta" (rect 129 43 300 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "resulta" (rect 96 67 234 144)(font "Arial" (color 0 0 0)))
+		(text "resultb" (rect 129 83 300 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "resultb" (rect 96 107 234 224)(font "Arial" (color 0 0 0)))
+		(text " dsp " (rect 190 328 410 666)(font "Arial" ))
+		(line (pt 64 32)(pt 128 32)(line_width 1))
+		(line (pt 128 32)(pt 128 328)(line_width 1))
+		(line (pt 64 328)(pt 128 328)(line_width 1))
+		(line (pt 64 32)(pt 64 328)(line_width 1))
+		(line (pt 65 52)(pt 65 76)(line_width 1))
+		(line (pt 66 52)(pt 66 76)(line_width 1))
+		(line (pt 65 92)(pt 65 116)(line_width 1))
+		(line (pt 66 92)(pt 66 116)(line_width 1))
+		(line (pt 65 132)(pt 65 156)(line_width 1))
+		(line (pt 66 132)(pt 66 156)(line_width 1))
+		(line (pt 65 172)(pt 65 196)(line_width 1))
+		(line (pt 66 172)(pt 66 196)(line_width 1))
+		(line (pt 65 212)(pt 65 236)(line_width 1))
+		(line (pt 66 212)(pt 66 236)(line_width 1))
+		(line (pt 65 252)(pt 65 276)(line_width 1))
+		(line (pt 66 252)(pt 66 276)(line_width 1))
+		(line (pt 65 292)(pt 65 316)(line_width 1))
+		(line (pt 66 292)(pt 66 316)(line_width 1))
+		(line (pt 127 52)(pt 127 76)(line_width 1))
+		(line (pt 126 52)(pt 126 76)(line_width 1))
+		(line (pt 127 92)(pt 127 116)(line_width 1))
+		(line (pt 126 92)(pt 126 116)(line_width 1))
+		(line (pt 0 0)(pt 208 0)(line_width 1))
+		(line (pt 208 0)(pt 208 344)(line_width 1))
+		(line (pt 0 344)(pt 208 344)(line_width 1))
+		(line (pt 0 0)(pt 0 344)(line_width 1))
+	)
+)

@@ -1,0 +1,18 @@
+# system info altshift on 2026.01.15.15:42:26
+system_info:
+name,value
+DEVICE,10AX115N2F45I1SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1768509745
+#
+#
+# Files generated for altshift on 2026.01.15.15:42:26
+files:
+filepath,kind,attributes,module,is_top
+sim/altshift.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,altshift,true
+altshift_taps_201/sim/altshift_altshift_taps_201_as43lbi.v,VERILOG,,altshift_altshift_taps_201_as43lbi,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+altshift.altshift_taps_0,altshift_altshift_taps_201_as43lbi

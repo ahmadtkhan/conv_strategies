@@ -1,0 +1,18 @@
+# system info dsp on 2026.01.24.13:01:55
+system_info:
+name,value
+DEVICE,10AX115N2F45I1SG
+DEVICE_FAMILY,Arria 10
+GENERATION_ID,1769277715
+#
+#
+# Files generated for dsp on 2026.01.24.13:01:55
+files:
+filepath,kind,attributes,module,is_top
+sim/dsp.v,VERILOG,CONTAINS_INLINE_CONFIGURATION,dsp,true
+altera_a10_native_fixed_point_dsp_201/sim/dsp_altera_a10_native_fixed_point_dsp_201_ffpppjq.v,VERILOG,,dsp_altera_a10_native_fixed_point_dsp_201_ffpppjq,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+dsp.a10_native_fixed_point_dsp_0,dsp_altera_a10_native_fixed_point_dsp_201_ffpppjq

@@ -1,0 +1,51 @@
+Quartus Prime Archive log --	/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/coef_conv.qarlog
+
+Archive:	/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/coef_conv.qar
+Date:		Sun Jan 25 00:19:21 2026
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Standard Edition
+
+	=========== Files Selected: ===========
+/cad1/Altera/20.1/quartus/linux64/assignment_defaults.qdf
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift.qsys
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift.sopcinfo
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift.bsf
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift.cmp
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift.csv
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift.debuginfo
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift.html
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift.ppf
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift.qip
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift.sip
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift.spd
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift.xml
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift_bb.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift_generation.rpt
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift_generation_previous.rpt
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift_inst.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift_inst.vhd
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift_taps_201/sim/altshift_altshift_taps_201_as43lbi.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift_taps_201/sim/altshift_altshift_taps_201_zjbqdji.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift_taps_201/synth/altshift_altshift_taps_201_as43lbi.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/altshift_taps_201/synth/altshift_altshift_taps_201_zjbqdji.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/sim/aldec/rivierapro_setup.tcl
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/sim/altshift.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/sim/cadence/cds.lib
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/sim/cadence/cds_libs/altshift_altshift_taps_201.cds.lib
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/sim/cadence/hdl.var
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/sim/cadence/ncsim_setup.sh
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/sim/mentor/msim_setup.tcl
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/sim/synopsys/vcs/vcs_setup.sh
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/sim/synopsys/vcsmx/synopsys_sim.setup
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/sim/synopsys/vcsmx/vcsmx_setup.sh
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/synth/altshift.qicache
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/synth/altshift.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/altshift/synth/altshift_cfg.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/coef_conv.qpf
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/coef_conv.qsf
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/coef_conv.sv
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/coef_conv_tb.sv
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/specific_coeff/fifo.sopcinfo
+	======= Total: 40 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

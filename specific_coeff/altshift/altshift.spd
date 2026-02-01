@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altshift_taps_201/sim/altshift_altshift_taps_201_as43lbi.v"
+   type="VERILOG"
+   library="altshift_altshift_taps_201" />
+ <file path="sim/altshift.v" type="VERILOG" hasInlineConfiguration="true" />
+ <topLevel name="altshift" />
+ <deviceFamily name="arria10" />
+</simPackage>

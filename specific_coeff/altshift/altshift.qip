@@ -1,0 +1,45 @@
+set_global_assignment -entity "altshift" -library "altshift" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "altshift" -library "altshift" -name IP_TOOL_VERSION "20.1"
+set_global_assignment -entity "altshift" -library "altshift" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "altshift" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../altshift.sopcinfo"]
+set_global_assignment -entity "altshift" -library "altshift" -name SLD_INFO "QSYS_NAME altshift HAS_SOPCINFO 1 GENERATION_ID 1768509746"
+set_global_assignment -library "altshift" -name MISC_FILE [file join $::quartus(qip_path) "altshift.cmp"]
+set_global_assignment -library "altshift" -name SLD_FILE [file join $::quartus(qip_path) "altshift.debuginfo"]
+set_global_assignment -entity "altshift" -library "altshift" -name IP_TARGETED_DEVICE_FAMILY "Arria 10"
+set_global_assignment -entity "altshift" -library "altshift" -name IP_GENERATED_DEVICE_FAMILY "{Arria 10}"
+set_global_assignment -entity "altshift" -library "altshift" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "altshift" -name MISC_FILE [file join $::quartus(qip_path) "../altshift.qsys"]
+set_global_assignment -entity "altshift" -library "altshift" -name IP_COMPONENT_NAME "YWx0c2hpZnQ="
+set_global_assignment -entity "altshift" -library "altshift" -name IP_COMPONENT_DISPLAY_NAME "YWx0c2hpZnQ="
+set_global_assignment -entity "altshift" -library "altshift" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "altshift" -library "altshift" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "altshift" -library "altshift" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "altshift" -library "altshift" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTc2ODUwOTc0Ng==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "altshift" -library "altshift" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::QXJyaWEgMTA=::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "altshift" -library "altshift" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::MTBBWDExNU4yRjQ1STFTRw==::QXV0byBERVZJQ0U="
+set_global_assignment -entity "altshift" -library "altshift" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::MQ==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_NAME "YWx0c2hpZnRfYWx0c2hpZnRfdGFwc18yMDFfYXM0M2xiaQ=="
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_DISPLAY_NAME "U2hpZnQgUmVnaXN0ZXIgKFJBTS1iYXNlZCkgSW50ZWwgRlBHQSBJUA=="
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_VERSION "MjAuMQ=="
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_DESCRIPTION "YWx0c2hpZnRfdGFwcw=="
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_PARAMETER "REVWSUNFX0ZBTUlMWQ==::QXJyaWEgMTA=::RGV2aWNlIGZhbWlseQ=="
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_PARAMETER "R1VJX1dJRFRI::OA==::SG93IHdpZGUgc2hvdWxkIHRoZSAic2hpZnRpbiIgaW5wdXQgYW5kIHRoZSAic2hpZnRvdXQiIG91dHB1dCBidXNlcyBiZT8="
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_PARAMETER "R1VJX05VTUJFUl9PRl9UQVBT::Mg==::SG93IG1hbnkgdGFwcyB3b3VsZCB5b3UgbGlrZT8="
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_PARAMETER "R1VJX0dST1VQX1RBUFM=::ZmFsc2U=::Q3JlYXRlIGdyb3VwcyBmb3IgZWFjaCB0YXAgb3V0cHV0"
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_PARAMETER "R1VJX1RBUF9ESVNUQU5DRQ==::NTE0::SG93IHdpZGUgc2hvdWxkIHRoZSBkaXN0YW5jZSBiZXR3ZWVuIHRhcHMgYmU/"
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_PARAMETER "R1VJX1VTRV9DTEtFTg==::dHJ1ZQ==::Q3JlYXRlIGEgY2xvY2sgZW5hYmxlIHBvcnQ="
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_PARAMETER "R1VJX1VTRV9BQ0xS::dHJ1ZQ==::Q3JlYXRlIGFuIGFzeW5jaHJvbm91cyBjbGVhciBwb3J0"
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_PARAMETER "R1VJX1JBTV9CTE9DS19UWVBF::TTIwSw==::V2hhdCBzaG91bGQgdGhlIFJBTSBibG9jayB0eXBlIGJlPw=="
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_COMPONENT_PARAMETER "R1VJX1RCRU5DSA==::ZmFsc2U=::VEVTVElORw=="
+
+set_global_assignment -library "altshift" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/altshift.v"]
+set_global_assignment -library "altshift" -name VERILOG_FILE [file join $::quartus(qip_path) "synth/altshift_cfg.v"]
+set_global_assignment -library "altshift_altshift_taps_201" -name VERILOG_FILE [file join $::quartus(qip_path) "altshift_taps_201/synth/altshift_altshift_taps_201_as43lbi.v"]
+
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_TOOL_NAME "altshift_taps"
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_TOOL_VERSION "20.1"
+set_global_assignment -entity "altshift_altshift_taps_201_as43lbi" -library "altshift_altshift_taps_201" -name IP_TOOL_ENV "Qsys"

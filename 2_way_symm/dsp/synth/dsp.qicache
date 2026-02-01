@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<qsys_generation_info>
+<qsys_file path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp.qsys" />
+<gen_dir path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/" />
+<user_regen_policy value="Never Regenerate Existing IP" />
+<actual_regen_policy value="Never Regenerate Existing IP" />
+<gen_action value="IP Generation Skipped" />
+<gen_status value="IP Generation Succeeded" />
+</qsys_generation_info>

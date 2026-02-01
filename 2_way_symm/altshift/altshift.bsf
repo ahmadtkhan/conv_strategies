@@ -1,0 +1,92 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 336 152)
+	(text "altshift" (rect 149 -1 173 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 136 20 148)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "aclr" (rect 0 0 14 12)(font "Arial" (font_size 8)))
+		(text "aclr" (rect 4 61 28 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 128 72)(line_width 1))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "clken" (rect 0 0 20 12)(font "Arial" (font_size 8)))
+		(text "clken" (rect 4 77 34 88)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 128 88)(line_width 1))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "clock" (rect 0 0 20 12)(font "Arial" (font_size 8)))
+		(text "clock" (rect 4 93 34 104)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 128 104)(line_width 1))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "shiftin[7..0]" (rect 0 0 42 12)(font "Arial" (font_size 8)))
+		(text "shiftin[7..0]" (rect 4 109 82 120)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 128 120)(line_width 3))
+	)
+	(port
+		(pt 336 72)
+		(output)
+		(text "shiftout[7..0]" (rect 0 0 48 12)(font "Arial" (font_size 8)))
+		(text "shiftout[7..0]" (rect 273 61 357 72)(font "Arial" (font_size 8)))
+		(line (pt 336 72)(pt 208 72)(line_width 3))
+	)
+	(port
+		(pt 336 88)
+		(output)
+		(text "taps[15..0]" (rect 0 0 40 12)(font "Arial" (font_size 8)))
+		(text "taps[15..0]" (rect 285 77 351 88)(font "Arial" (font_size 8)))
+		(line (pt 336 88)(pt 208 88)(line_width 3))
+	)
+	(drawing
+		(text "altshift_taps_input" (rect 20 43 154 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "aclr" (rect 133 67 290 144)(font "Arial" (color 0 0 0)))
+		(text "clken" (rect 133 83 296 176)(font "Arial" (color 0 0 0)))
+		(text "clock" (rect 133 99 296 208)(font "Arial" (color 0 0 0)))
+		(text "shiftin" (rect 133 115 308 240)(font "Arial" (color 0 0 0)))
+		(text "altshift_taps_output" (rect 209 43 538 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "shiftout" (rect 173 67 394 144)(font "Arial" (color 0 0 0)))
+		(text "taps" (rect 187 83 398 176)(font "Arial" (color 0 0 0)))
+		(text " altshift " (rect 304 136 668 282)(font "Arial" ))
+		(line (pt 128 32)(pt 208 32)(line_width 1))
+		(line (pt 208 32)(pt 208 136)(line_width 1))
+		(line (pt 128 136)(pt 208 136)(line_width 1))
+		(line (pt 128 32)(pt 128 136)(line_width 1))
+		(line (pt 129 52)(pt 129 124)(line_width 1))
+		(line (pt 130 52)(pt 130 124)(line_width 1))
+		(line (pt 207 52)(pt 207 92)(line_width 1))
+		(line (pt 206 52)(pt 206 92)(line_width 1))
+		(line (pt 0 0)(pt 336 0)(line_width 1))
+		(line (pt 336 0)(pt 336 152)(line_width 1))
+		(line (pt 0 152)(pt 336 152)(line_width 1))
+		(line (pt 0 0)(pt 0 152)(line_width 1))
+	)
+)

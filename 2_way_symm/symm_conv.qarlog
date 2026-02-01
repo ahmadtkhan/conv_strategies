@@ -1,0 +1,83 @@
+Quartus Prime Archive log --	/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/symm_conv.qarlog
+
+Archive:	/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/symm_conv.qar
+Date:		Sun Jan 25 00:19:59 2026
+Quartus Prime		20.1.0 Build 711 06/05/2020 SJ Standard Edition
+
+	=========== Files Selected: ===========
+/cad1/Altera/20.1/quartus/linux64/assignment_defaults.qdf
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift.qsys
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift.sopcinfo
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift.bsf
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift.cmp
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift.csv
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift.debuginfo
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift.html
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift.ppf
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift.qip
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift.sip
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift.spd
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift.xml
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift_bb.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift_generation.rpt
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift_generation_previous.rpt
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift_inst.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift_inst.vhd
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift_taps_201/sim/altshift_altshift_taps_201_as43lbi.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift_taps_201/sim/altshift_altshift_taps_201_zjbqdji.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift_taps_201/synth/altshift_altshift_taps_201_as43lbi.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/altshift_taps_201/synth/altshift_altshift_taps_201_zjbqdji.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/sim/aldec/rivierapro_setup.tcl
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/sim/altshift.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/sim/cadence/cds.lib
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/sim/cadence/cds_libs/altshift_altshift_taps_201.cds.lib
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/sim/cadence/hdl.var
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/sim/cadence/ncsim_setup.sh
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/sim/mentor/msim_setup.tcl
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/sim/synopsys/vcs/vcs_setup.sh
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/sim/synopsys/vcsmx/synopsys_sim.setup
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/sim/synopsys/vcsmx/vcsmx_setup.sh
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/synth/altshift.qicache
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/synth/altshift.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/altshift/synth/altshift_cfg.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp.qsys
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp.sopcinfo
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/altera_a10_native_fixed_point_dsp_201/sim/dsp_altera_a10_native_fixed_point_dsp_201_ffpppjq.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/altera_a10_native_fixed_point_dsp_201/synth/dsp_altera_a10_native_fixed_point_dsp_201_ffpppjq.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/dsp.bsf
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/dsp.cmp
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/dsp.csv
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/dsp.debuginfo
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/dsp.html
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/dsp.ppf
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/dsp.qip
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/dsp.sip
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/dsp.spd
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/dsp.xml
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/dsp_bb.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/dsp_generation.rpt
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/dsp_generation_previous.rpt
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/dsp_inst.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/dsp_inst.vhd
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/sim/aldec/rivierapro_setup.tcl
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/sim/cadence/cds.lib
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/sim/cadence/cds_libs/dsp_altera_a10_native_fixed_point_dsp_201.cds.lib
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/sim/cadence/hdl.var
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/sim/cadence/ncsim_setup.sh
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/sim/dsp.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/sim/mentor/msim_setup.tcl
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/sim/synopsys/vcs/vcs_setup.sh
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/sim/synopsys/vcsmx/synopsys_sim.setup
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/sim/synopsys/vcsmx/vcsmx_setup.sh
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/synth/dsp.qicache
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/synth/dsp.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/synth/dsp_cfg.v
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/symm_conv.qpf
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/symm_conv.qsf
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/symm_conv.sdc
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/symm_conv.sv
+/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/symm_conv_tb.sv
+	======= Total: 72 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="altera_a10_native_fixed_point_dsp_201/sim/dsp_altera_a10_native_fixed_point_dsp_201_ffpppjq.v"
+   type="VERILOG"
+   library="dsp_altera_a10_native_fixed_point_dsp_201" />
+ <file path="sim/dsp.v" type="VERILOG" hasInlineConfiguration="true" />
+ <topLevel name="dsp" />
+ <deviceFamily name="arria10" />
+</simPackage>

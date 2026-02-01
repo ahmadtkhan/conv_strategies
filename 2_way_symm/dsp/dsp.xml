@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2026.01.24.13:01:56"
+ outputDirectory="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Arria 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10AX115N2F45I1SG"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="aclr" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="aclr" direction="input" role="aclr" width="2" />
+  </interface>
+  <interface name="ax" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="ax" direction="input" role="ax" width="18" />
+  </interface>
+  <interface name="ay" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="ay" direction="input" role="ay" width="18" />
+  </interface>
+  <interface name="bx" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="bx" direction="input" role="bx" width="18" />
+  </interface>
+  <interface name="by" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="by" direction="input" role="by" width="18" />
+  </interface>
+  <interface name="clk" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="clk" direction="input" role="clk" width="3" />
+  </interface>
+  <interface name="ena" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="ena" direction="input" role="ena" width="3" />
+  </interface>
+  <interface name="resulta" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="resulta" direction="output" role="resulta" width="37" />
+  </interface>
+  <interface name="resultb" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="resultb" direction="output" role="resultb" width="37" />
+  </interface>
+ </perimeter>
+ <entity kind="dsp" version="1.0" name="dsp">
+  <parameter name="AUTO_GENERATION_ID" value="1769277716" />
+  <parameter name="AUTO_DEVICE" value="10AX115N2F45I1SG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
+  <generatedFiles>
+   <file
+       path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/synth/dsp.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/synth/dsp_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/synth/dsp.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/synth/dsp_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/cad1/Altera/20.1/ip/altera/native_mac/twentynm_mac_native_hw/twentynm_mac_native_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="dsp">"Generating: dsp"</message>
+   <message level="Info" culprit="dsp">"Generating: dsp_altera_a10_native_fixed_point_dsp_201_ffpppjq"</message>
+   <message level="Info" culprit="a10_native_fixed_point_dsp_0">generating top-level entity dsp_altera_a10_native_fixed_point_dsp_201_ffpppjq</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_a10_native_fixed_point_dsp"
+   version="20.1"
+   name="dsp_altera_a10_native_fixed_point_dsp_201_ffpppjq">
+  <parameter name="by_width" value="18" />
+  <parameter name="delay_scan_out_by" value="false" />
+  <parameter name="bx_clock" value="none" />
+  <parameter name="ax_clock" value="none" />
+  <parameter name="accumulate_clock" value="none" />
+  <parameter name="output_clock" value="0" />
+  <parameter name="sub_pipeline_clock" value="none" />
+  <parameter name="delay_scan_out_ay" value="false" />
+  <parameter name="az_width" value="0" />
+  <parameter name="operand_source_mby" value="input" />
+  <parameter name="ax_width" value="18" />
+  <parameter name="operand_source_mbx" value="input" />
+  <parameter name="coef_a_3" value="0" />
+  <parameter name="coef_a_2" value="0" />
+  <parameter name="coef_a_1" value="0" />
+  <parameter name="coef_a_0" value="0" />
+  <parameter name="result_a_width" value="37" />
+  <parameter name="coef_a_7" value="0" />
+  <parameter name="coef_a_6" value="0" />
+  <parameter name="enable_accumulate" value="false" />
+  <parameter name="coef_a_5" value="0" />
+  <parameter name="coef_a_4" value="0" />
+  <parameter name="enable_double_accum" value="false" />
+  <parameter name="ay_use_scan_in" value="false" />
+  <parameter name="load_const_pipeline_clock" value="none" />
+  <parameter name="scan_out_width" value="18" />
+  <parameter name="negate_clock" value="none" />
+  <parameter name="by_use_scan_in" value="false" />
+  <parameter name="accum_pipeline_clock" value="none" />
+  <parameter name="sub_clock" value="none" />
+  <parameter name="operand_source_max" value="input" />
+  <parameter name="az_clock" value="none" />
+  <parameter name="operand_source_may" value="input" />
+  <parameter name="coef_sel_a_clock" value="none" />
+  <parameter name="bz_clock" value="none" />
+  <parameter name="preadder_subtract_b" value="false" />
+  <parameter name="preadder_subtract_a" value="false" />
+  <parameter name="ay_scan_in_clock" value="none" />
+  <parameter name="result_b_width" value="37" />
+  <parameter name="enable_sub" value="false" />
+  <parameter name="bz_width" value="0" />
+  <parameter name="enable_negate" value="false" />
+  <parameter name="signed_max" value="false" />
+  <parameter name="signed_may" value="true" />
+  <parameter name="by_clock" value="none" />
+  <parameter name="coef_b_7" value="0" />
+  <parameter name="bx_width" value="18" />
+  <parameter name="load_const_clock" value="none" />
+  <parameter name="operation_mode" value="m18x18_full" />
+  <parameter name="coef_b_2" value="0" />
+  <parameter name="coef_b_1" value="0" />
+  <parameter name="coef_b_0" value="0" />
+  <parameter name="coef_b_6" value="0" />
+  <parameter name="coef_sel_b_clock" value="none" />
+  <parameter name="coef_b_5" value="0" />
+  <parameter name="coef_b_4" value="0" />
+  <parameter name="coef_b_3" value="0" />
+  <parameter name="ay_scan_in_width" value="18" />
+  <parameter name="input_pipeline_clock" value="0" />
+  <parameter name="gui_scanout_enable" value="false" />
+  <parameter name="load_const_value" value="0" />
+  <parameter name="use_chainadder" value="false" />
+  <parameter name="negate_pipeline_clock" value="none" />
+  <parameter name="signed_mby" value="true" />
+  <parameter name="mode_sub_location" value="0" />
+  <parameter name="signed_mbx" value="false" />
+  <parameter name="enable_loadconst" value="false" />
+  <parameter name="gui_chainout_enable" value="false" />
+  <generatedFiles>
+   <file
+       path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/altera_a10_native_fixed_point_dsp_201/synth/dsp_altera_a10_native_fixed_point_dsp_201_ffpppjq.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/nfs/ug/homes-4/k/khanah35/Documents/conv_strategies/2_way_symm/dsp/altera_a10_native_fixed_point_dsp_201/synth/dsp_altera_a10_native_fixed_point_dsp_201_ffpppjq.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/cad1/Altera/20.1/ip/altera/native_mac/twentynm_mac_native_hw/twentynm_mac_native_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="dsp" as="a10_native_fixed_point_dsp_0" />
+  <messages>
+   <message level="Info" culprit="dsp">"Generating: dsp_altera_a10_native_fixed_point_dsp_201_ffpppjq"</message>
+   <message level="Info" culprit="a10_native_fixed_point_dsp_0">generating top-level entity dsp_altera_a10_native_fixed_point_dsp_201_ffpppjq</message>
+  </messages>
+ </entity>
+</deploy>

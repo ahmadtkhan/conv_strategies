@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pinplan
+ variation_name="altshift_taps_0"
+ megafunction_name="ALTSHIFT_TAPS"
+ intended_family="Arria 10"
+ specifies="all_ports">
+ <global>
+  <pin name="aclr" direction="input" scope="external" />
+  <pin name="clken" direction="input" scope="external" />
+  <pin name="clock" direction="input" scope="external" />
+  <pin name="shiftin[7..0]" direction="input" scope="external" />
+  <pin name="shiftout[7..0]" direction="output" scope="external" />
+  <pin name="taps[15..0]" direction="output" scope="external" />
+ </global>
+</pinplan>

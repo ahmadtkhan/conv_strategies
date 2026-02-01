@@ -1,0 +1,14 @@
+	component dsp is
+		port (
+			aclr    : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- aclr
+			ax      : in  std_logic_vector(17 downto 0) := (others => 'X'); -- ax
+			ay      : in  std_logic_vector(17 downto 0) := (others => 'X'); -- ay
+			bx      : in  std_logic_vector(17 downto 0) := (others => 'X'); -- bx
+			by      : in  std_logic_vector(17 downto 0) := (others => 'X'); -- by
+			clk     : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- clk
+			ena     : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- ena
+			resulta : out std_logic_vector(36 downto 0);                    -- resulta
+			resultb : out std_logic_vector(36 downto 0)                     -- resultb
+		);
+	end component dsp;
+
